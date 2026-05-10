@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.gettyimages.com/id/639337086/photo/eiffel-tower-in-paris-france.jpg?s=612x612&w=0&k=20&c=OnRS_Z5f8bHEmFb1afXHvoIrRvdcrl2N8rAEvoCWxzM=" width="400px" alt="no image">
+
+    <img src="./images.pn" width="400px" alt="no image">
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="./image.png" />
+        <source media="(min-width: 460px)" srcset="./images2.png" />
+        <img src="./images.png" alt="">
+    </picture>
+
+    <!-- an image map generator -->
+
+    <img src="images.png" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="112,52,210,78" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="109,81,138,95" shape="rect">
+</map>
+
+<script>
+    function one(){
+        alert("You clicked on one")
+    }
+    function two(){
+        alert("You clicked on two")
+    }
+    
+    
+</script>
+</body>
+</html>
